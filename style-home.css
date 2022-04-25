@@ -1,0 +1,53 @@
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background: white;
+    padding: 20px;
+}
+
+.titulo-centrado{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+
+#mision{
+font-size: 20px;
+}
+
+.diferenciales{
+    background: white;
+    padding: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;  /*alinea el texto dentro del bloqeu/div pero en la parte inferior*/
+    vertical-align: top;    /*alinea en la parte superior*/
+    width: 20%;             /*  tamaño de ña imagen*/
+    margin-right: 15%;      /* un margen de esapcio entre el texto y la imagen*/
+}
+
+.imagenDiferencial{
+    width: 50%;
+}
+

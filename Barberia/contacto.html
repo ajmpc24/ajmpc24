@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Barbería Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <!--resetar etiquetas-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="caja">
+            <h1><img src="imagenes/logo.png" alt="Logo de la barberia Alura"></h1>
+            <!--"alt" es una buena practica colocarlo en todas las imagenes en caso de q no carguen esta este dato como descripcion-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html"> Producto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+            <section class="formulario">
+            <form>
+                <!--para label jay um imput-->
+                <label for="nombreApellido" class="input-padron">Nombre y Apellido</label>
+                <input type="text" id="nombreApellido" required placeholder="Ingrese su nombre y apellido">
+
+                <label for="correoElectronico" class="input-padron">Correo Electronico</label>
+                <input type="email" id="correoElectronico" required placeholder="email@dominio.com">
+
+                <label for="telefono" class="input-padron">Telefono</label>
+                <input type="tel" id="telefono" required placeholder="(XX) XXXX-XXXX">
+
+                <label for="mensaje" class="input-padron"></label>
+                <textarea id="mensaje" cols="70" rows="10"></textarea>
+
+                <fieldset>
+                    <!-- agrupa a varias etiquetas como un div mejorado-->
+                    <legend class="legenda">¿Como le gustaria que lo contactarmos?</legend>
+                    <!--sustituye a la etiqueta pcuando se usa "fieldset"-->
+                    <!--al colocar name="contacto" es un apellido-->
+                    <!--le indicamos q todos los q tiene ese  nombre son del mismo elemento-->
+                    <!--al momento de seleccionar solo se marcara uno de ellos-->
+                    <label for="radio-email">
+                        <input type="radio" name="contacto" value="email" id="radio-email">Email
+                    </label>
+
+                    <label for="radio-telefono">
+                        <input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono
+                    </label>
+
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp
+                    </label>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>¿Horario de atencion?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades?</label>
+
+                <!--boton enviar-->
+                <!--value le podemos cambiar la descripcion que queramos-->
+                <input type="submit" value="Enviar Formulario" class="enviar">
+                <!--por defecto ya el boton trae nombre "enviar"-->
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>Cerrado</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>08h a 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h a 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>08h a 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h a 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="Logo de la barberia Alura">
+        <p class="copyright">&copy Copyritght Barberia Alura - 2020</p>
+    </footer>
+
+</body>
+
+</html>

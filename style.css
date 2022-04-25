@@ -1,0 +1,168 @@
+/* header */
+.navbar {
+    background: #242624;
+}
+
+.navbar-text {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: gray;
+    text-decoration: none;
+}
+
+.nav-link a:link {
+    color: gray
+}
+
+.nav-link a:visited {
+    color: #8207c9;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link a:active {
+    color: white;
+}
+
+
+/* body */
+/* seccion top (oradores) */
+.card-img-overlay {
+    color: white;
+    position: absolute;
+    top: 320px;
+    text-align: right;
+    margin-right: 100px;
+}
+
+.row h2 {
+    padding: 8px;
+    text-align: center;
+}
+
+p {
+    margin: 0%;
+}
+
+.card input {
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.boton-quiero {
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+}
+
+.boton-quiero:hover {
+    border-color: yellowgreen;
+    color: yellowgreen;
+    font-size: 20px;
+}
+
+.boton-comprar {
+    margin-left: 5px;
+    border: 0;
+    background-color: #00C851;
+}
+
+.boton-comprar:hover {
+    font-size: 20px;
+    background: rgba(61, 241, 6, 0.815);
+    border: rgba(61, 241, 6, 0.815);
+}
+
+.container-oradores {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.row {
+    justify-content: center;
+}
+
+.col-3 {
+    float: right;
+    margin: 20px;
+    padding: 0;
+    border-color: gray;
+    border-width: 2px;
+}
+
+.col-3 input {
+    border-radius: 10px;
+    border: 1px;
+    font-weight: bold;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+h6 {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.texto-octubre h2 {
+    text-align: left;
+    font-size: 2em;
+    padding-top: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+
+.boton-Negocios,
+boton-Startups {
+    font-weight: bold;
+    border: 1px;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+/*  seccion media (imagenes) */
+.container {
+    display: block;
+}
+
+.texto-octubre {
+    background: #242624;
+    color: whitesmoke;
+    font-size: small;
+    padding-left: 570px;
+    padding-bottom: 165px;
+}
+
+
+.imagen-honolulu {
+    float: left;
+}
+
+.boton-conoce {
+    padding: 5px;
+    margin-top: 15px;
+    color: whitesmoke;
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+/* seccion bottom (formulario)  */
+
+
+/* Pie de pagina  */

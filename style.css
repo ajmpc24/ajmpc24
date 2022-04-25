@@ -28,8 +28,6 @@
 .nav-link a:active {
     color: white;
 }
-
-
 /* body */
 /* seccion top (oradores) */
 .card-img-overlay {
@@ -133,7 +131,6 @@ boton-Startups {
     padding-top: 0;
     padding-bottom: 5px;
 }
-
 /*  seccion media (imagenes) */
 .container {
     display: block;
@@ -146,7 +143,6 @@ boton-Startups {
     padding-left: 570px;
     padding-bottom: 165px;
 }
-
 
 .imagen-honolulu {
     float: left;

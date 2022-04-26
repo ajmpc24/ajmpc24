@@ -29,7 +29,6 @@
     color: white;
 }
 
-
 /* body */
 /* seccion top (oradores) */
 .card-img-overlay {
@@ -147,7 +146,6 @@ boton-Startups {
     padding-bottom: 165px;
 }
 
-
 .imagen-honolulu {
     float: left;
 }
@@ -163,6 +161,69 @@ boton-Startups {
 }
 
 /* seccion bottom (formulario)  */
+div formulario {
+    display: block;
+}
 
+.texto-orador {
+    text-align: center;
+}
+
+.text {
+    margin-top: 2px;
+    padding-top: 2px;
+    font-size: 13px;
+}
+
+.nombre-apellido {
+    margin-top: 10px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+textarea {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 330px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.boton-enviar-formulario {
+    background-color: #75a82c;
+    color: white;
+    margin-left: 5px;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 20em;
+    padding-right: 21em;
+    margin: 20px;
+    margin-left: 330px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+h5 {
+    font-size: 12px;
+    margin-left: 335px;
+}
 
 /* Pie de pagina  */
+.pieDePagina {
+    background-color: #012e46;
+    color: white;
+    display: inline-flex;
+    width: 100%;
+    padding: 30px;
+    text-indent: 70px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 95%;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}

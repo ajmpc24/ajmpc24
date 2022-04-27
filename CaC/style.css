@@ -156,6 +156,13 @@ boton-Startups {
     border-width: 1px;
     border-radius: 5px;
 }
+
+.boton-conoce:hover {
+    font-size: 15px;
+    color: violet;
+    border-color: violet;
+}
+
 /* seccion bottom (formulario)  */
 div formulario {
     display: block;
@@ -206,18 +213,28 @@ textarea {
     margin-left: 335px;
 }
 /* Pie de pagina  */
+
+
 .pieDePagina {
     background-color: #012e46;
-    color: white;
     display: inline-flex;
     width: 100%;
-    padding: 30px;
-    text-indent: 70px;
-    justify-content: center;
+    padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    text-indent: 80px;
     margin-top: 10px;
-    margin-bottom: 20px;
     opacity: 95%;
     margin-bottom: 0;
-    text-overflow: ellipsis;
     font-size: 14px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
 }

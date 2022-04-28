@@ -10,7 +10,7 @@ img {
 body {
     background: #E5E5E5;
     position: relative;
-    
+
 }
 
 input {
@@ -31,7 +31,7 @@ input {
     border: 0;
 }
 
-button{
+button {
     height: 67px;
     width: 328px;
     font-size: 18px;
@@ -45,7 +45,7 @@ button{
     color: white;
     background: #0A3871;
     padding: 24px;
-    margin-top: 570px ;
+    margin-top: 570px;
     margin-left: 180px;
     margin-right: 20px;
 }
@@ -54,4 +54,30 @@ button{
     color: #0A3871;
     background: #D8DFE8;
 
+}
+
+.texto-top-botones {
+    color: #495057;
+    margin-left: 210px;
+    margin-top: -130px;
+    font-family: 'Inter', sans-serif;
+}
+
+.imagen-texto-boton {
+    margin-left: 120px;
+    margin-top: 530px;
+}
+
+.muneco-busqueda{
+    text-align: right;
+    margin-right: 150px;
+}
+
+.titulo-muneco{
+    text-align: right;
+    margin-right: 60px;
+}
+
+#resultadoBusqueda{
+    margin-right: 660px;
 }

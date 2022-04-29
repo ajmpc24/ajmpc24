@@ -1,83 +1,119 @@
-/* logo */
-img {
-    position: absolute;
-    margin-top: 1%;
-    left: 5%;
-    top: 0%;
-    bottom: 0%;
-}
-
 body {
     background: #E5E5E5;
-    position: relative;
-
 }
 
-input {
+.container {
+    position: relative;
+    width: 1240px;
+    height: 590px;
+    background: #E5E5E5;
+    margin: 40px;
+}
+
+.logo {
     position: absolute;
-    width: 570px;
-    height: 48px;
-    left: 180px;
-    top: 160px;
-    background-color: transparent;
+    left: 5px;
+    right: 10;
 }
 
 #texto-ingresado {
+    position: relative;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 100px;
+    border: 0;
+    color: #0A3871;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 150%;
-    color: #0A3871;
-    border: 0;
 }
 
-button {
-    height: 67px;
-    width: 328px;
-    font-size: 18px;
-    border-radius: 24px;
-    box-sizing: border-box;
-    border: 1px solid #0A3871;
-
+.botones {
+    position: relative;
+    width: 577px;
+    height: 60px;
+    left: 240px;
+    top: 630px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 5px;
+    padding-right: 30px;
 }
 
-.button1 {
+.button {
+    position: relative;
+    width: 280px;
+    height: 20px;
+    font-family: sans-serif;
+    font-size: 12px;
+    border-width: 1px;
+    border-color: #0A3871;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+#boton1 {
     color: white;
-    background: #0A3871;
-    padding: 24px;
-    margin-top: 570px;
-    margin-left: 180px;
-    margin-right: 20px;
+    background-color: #0A3871;
 }
 
-.button2 {
-    color: #0A3871;
+#boton2 {
     background: #D8DFE8;
-
-}
-
-.texto-top-botones {
-    color: #495057;
-    margin-left: 210px;
-    margin-top: -130px;
-    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    position: relative;
+    left: 20px;
 }
 
 .imagen-texto-boton {
-    margin-left: 120px;
-    margin-top: 530px;
+    position: absolute;
+    left: 240px;
+    top: 680px;
 }
 
-.muneco-busqueda{
-    text-align: right;
-    margin-right: 150px;
+.texto-recuerda {
+    position: absolute;
+    left: 260px;
+    top: 659px;
+    color: #495057;
+    opacity: 0.8;
 }
 
-.titulo-muneco{
-    text-align: right;
-    margin-right: 60px;
+.munecoYtexto {
+    position: absolute;
+    width: 370px;
+    height: 800px;
+    left: 900px;
+    top: 10px;
+    background: #FFFFFF;
+    border-radius: 32px;
 }
 
-#resultadoBusqueda{
-    margin-right: 660px;
+.muneco-busqueda {
+    margin-top: 200px;
+}
+
+label {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    opacity: 80%;
+    font-size: 35px;
+}
+
+#mensaje {
+    padding-bottom: 25px;
+    width: 336px;
+    height: 48px;
+    margin-left: 15px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #495057;
+    border-width: 0;
 }

@@ -45,9 +45,11 @@
     padding: 0;
     display: flex;
     width: 400%;
+
     animation: carrusel 20s infinite;
     animation-direction: alternate;
 }
+
 
 .imagenes {
     width: 100%;
@@ -69,11 +71,11 @@
     }
 
     35% {
-        margin-left: -180%;
+        margin-left: -150%;
     }
 
     45% {
-        margin-left: -180%;
+        margin-left: -150%;
     }
 
     50% {
@@ -207,9 +209,10 @@ boton-Startups {
     position: relative;
     top: 10px;
     width: 50%;
-    height: 400px;
+    height: 380px;
     overflow: hidden;
 }
+
 .carrusel-imagenes img{
     max-width: 100%;
     max-height: 100%;
@@ -220,7 +223,7 @@ boton-Startups {
     top: 1360px;
     left: 675px;
     width: 50%;
-    height: 400px;
+    height: 380px;
     padding-left: 5px;
     background: #242624;
     color: whitesmoke;

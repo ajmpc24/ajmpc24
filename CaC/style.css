@@ -1,11 +1,16 @@
 /* header */
 .navbar {
     background: #242624;
+    padding: 0%;
 }
 
 .navbar-text {
+    position: absolute;
+    left: 180px;
+    top: 20px;
     color: white;
     text-decoration: none;
+
 }
 
 .nav-link {
@@ -28,16 +33,76 @@
 .nav-link a:active {
     color: white;
 }
-/* body */
-/* seccion top (oradores) */
-.card-img-overlay {
-    color: white;
-    position: absolute;
-    top: 320px;
-    text-align: right;
-    margin-right: 100px;
+
+/* Carrusel */
+.carrusel {
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
 }
 
+.carrusel-imagenes {
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: carrusel 20s infinite;
+    animation-direction: alternate;
+}
+
+.imagenes {
+    width: 100%;
+    list-style: none;
+    filter: brightness(45%);
+}
+
+.carrusel-frames imagenes {
+    width: 100%;
+}
+
+@keyframes carrusel {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -180%;
+    }
+
+    45% {
+        margin-left: -180%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.card-titulo-BsAs{
+    position: absolute;
+    left: 800px;
+    top: 310px;
+    color: white;
+    justify-content: right;
+    text-align: right;
+}
+/* body */
+/* seccion top (oradores) */
 .row h2 {
     padding: 8px;
     text-align: center;
@@ -47,8 +112,8 @@ p {
     margin: 0%;
 }
 
-.card input {
-    border-radius: 10px;
+.card-titulo-BsAs input {
+    border-radius: 5px;
     color: white;
     padding: 8px;
     margin-top: 15px;
@@ -72,6 +137,7 @@ p {
     margin-left: 5px;
     border: 0;
     background-color: #00C851;
+    filter: brightness(80%);
 }
 
 .boton-comprar:hover {
@@ -130,26 +196,42 @@ boton-Startups {
     padding-top: 0;
     padding-bottom: 5px;
 }
+
 /*  seccion media (imagenes) */
-.container {
-    display: block;
+.seccion-carrusel-2 {
+    width: 100%;
+}
+
+/* Carrusel #2 */
+.carrusel-2 {
+    position: relative;
+    top: 10px;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+}
+.carrusel-imagenes img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .texto-octubre {
+    position: absolute;
+    top: 1360px;
+    left: 675px;
+    width: 50%;
+    height: 400px;
+    padding-left: 5px;
     background: #242624;
     color: whitesmoke;
     font-size: small;
-    padding-left: 570px;
-    padding-bottom: 165px;
-}
-
-.imagen-honolulu {
-    float: left;
+    float: right;
 }
 
 .boton-conoce {
     padding: 5px;
     margin-top: 15px;
+    margin-left: 5px;
     color: whitesmoke;
     background-color: transparent;
     border-color: white;
@@ -212,6 +294,7 @@ textarea {
     font-size: 12px;
     margin-left: 335px;
 }
+
 /* Pie de pagina  */
 
 
@@ -234,7 +317,7 @@ ul {
     list-style: none;
 }
 
-.link{
+.link {
     color: white;
     text-decoration: none;
 }

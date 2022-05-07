@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Encriptador de Texto</title>
     <meta charset="UTF-8">
@@ -16,33 +15,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <!-- logo -->
         <div class="logo">
             <!-- logo alura -->
             <img src="img/logoAlura.png" alt="logo de alura">
         </div>
-        <!-- botones -->
-        <div class="textoYbotones">
-            <div class="texto-input">
-                <input type="text" name="reset" value="Ingrese el texto aqui" style="color:#0A3871 ;">
+    </header>
+    <main>
+        <section class="TextoIngresadoYBotones">
+            <!-- ingreso de texto y botones -->
+            <!-- botones -->
+            <div class="textoYbotones">
+                <div class="texto-input">
+                    <input type="text" style="color:#0A3871;" class="form_input" >
+                    <label for="" class="form_label">Ingrese el texto aqui</label>
                 </div>
-            <div class="botones">
-                <button type="button" id="boton1" class="button">Encriptar</button>
-                <button type="button" id="boton2" class="button">Desencriptar</button>
+                <div class="botones">
+                    <button type="button" id="boton1" class="button">Encriptar</button>
+                    <button type="button" id="boton2" class="button">Desencriptar</button>
+                </div>
+                <div class="texto-botones">
+                    <!-- texto de los botones -->
+                    <img src="img/VectorSigno.png" alt="Signo" class="imagen-texto-boton">
+                    <h5 class="texto-recuerda">Solo letras minúsculas y sin acentos</h5>
+                </div>
             </div>
-            <div class="texto-botones">
-                <!-- texto de los botones -->
-                <img src="img/VectorSigno.png" alt="Signo" class="imagen-texto-boton">
-                <h5 class="texto-recuerda">Solo letras minúsculas y sin acentos</h5>
-            </div>
-        </div>
-        <div class="munecoYtexto">
-            <!-- "muñeco-busqueda" -->
-            <div class="muneco-busqueda">
-                <img src="img/Muñeco.png" alt="muneco de busqueda" class="muneco-busqueda">
-                <h3 class="texto-muneco">Ningun mensaje fue encontrado</h3>
-                <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-    </div><!-- cierre container -->
+        </section>
+        <section>
+            <!-- cuadro resultado + imagen + texto info -->
+            <div class="munecoYtexto">
+                <!-- "muñeco-busqueda" -->
+                <div class="muneco-busqueda">
+                    <img src="img/Muñeco.png" alt="muneco de busqueda" class="muneco-busqueda">
+                    <h3 class="texto-muneco">Ningun mensaje fue encontrado</h3>
+                    <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+        </section>
+    </main>
 </body>
-</html>

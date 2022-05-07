@@ -2,18 +2,12 @@
     background: #E5E5E5;
 }
 
-.container {
-    position: relative;
-    width: 1240px;
-    height: 590px;
-    background: #E5E5E5;
-    margin: 40px;
-}
-
-.logo {
+.logo img {
     position: relative;
     left: 50px;
     top: 20px;
+    background-image: url(img/Galaxy.mp4);
+
 }
 
 /* 
@@ -166,30 +160,49 @@
     opacity: 0.8;
 }
 
+/* caja */
 .munecoYtexto {
-    background: white;
+    background: transparent;
     position: absolute;
-    width: 310px;
+    width: 320px;
     height: 610px;
     left: 950px;
-    top: 15px;
+    top: 20px;
     border-radius: 32px;
-    box-shadow: 0 15px 45px #0A3871;
-    overflow: hidden;
+    box-shadow: 5px 5px 15px 5px #0A3871;
 }
 
+.munecoYtexto:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: transparent;
+    filter: blur(10px);
+}
+
+.munecoYtexto:before,
+.munecoYtexto:after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+    opacity: 40%;
+}
+
+
+/* contenido */
 .muneco-busqueda {
-    background: white;
+    background: transparent;
     width: 250px;
     margin-top: 25px;
     margin-left: 20px;
     padding-bottom: 25px;
+    filter: brightness(100%);
 }
 
 .texto-muneco {
-    background: white;
+    background: transparent;
     font-size: 25px;
-    opacity: 90%;
     margin-left: 10px;
     text-align: center;
     font-weight: bold;
@@ -198,9 +211,8 @@
 }
 
 .mensaje {
-    background-color: white;
-    width: 290px;
-    opacity: 85%;
+    background-color: transparent;
+    width: 285px;
     color: #495057;
     display: inline-block;
     text-align: center;

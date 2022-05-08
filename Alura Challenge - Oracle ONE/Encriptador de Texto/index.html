@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Encriptador de Texto</title>
     <meta charset="UTF-8">
@@ -14,6 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <!-- logo -->
@@ -28,12 +30,12 @@
             <!-- botones -->
             <div class="textoYbotones">
                 <div class="texto-input">
-                    <input type="text" style="color:#0A3871;" class="form_input" >
+                    <input type="text" class="form_input" required>
                     <label for="" class="form_label">Ingrese el texto aqui</label>
                 </div>
                 <div class="botones">
-                    <button type="button" id="boton1" class="button">Encriptar</button>
-                    <button type="button" id="boton2" class="button">Desencriptar</button>
+                    <button type="button" onclick="botonEncriptar()" id="boton1" class="button">Encriptar</button>
+                    <button type="button" onclick="botonDesencriptar()" id="boton2" class="button">Desencriptar</button>
                 </div>
                 <div class="texto-botones">
                     <!-- texto de los botones -->
@@ -48,9 +50,44 @@
                 <!-- "muñeco-busqueda" -->
                 <div class="muneco-busqueda">
                     <img src="img/Muñeco.png" alt="muneco de busqueda" class="muneco-busqueda">
-                    <h3 class="texto-muneco">Ningun mensaje fue encontrado</h3>
+                    <input type="text" class="input-text-resultado color:black"
+                        placeholder="Ningun mensaje fue encontrado">
                     <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
         </section>
     </main>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+<footer>
+    <div class="waves">
+        <div class="wave-1"></div>
+        <div class="wave-2"></div>
+        <div class="wave-3"></div>
+        <div class="wave-4"></div>
+        <p>@2022 Alejandro Perez - All rights reserved</p>
+        <ul class="iconos_Sociales">
+            <li><a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+</html>

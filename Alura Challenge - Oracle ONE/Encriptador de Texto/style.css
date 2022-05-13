@@ -84,6 +84,8 @@ body{
     overflow: hidden;
     transition: color 0.3s;
     margin-right: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 
 #boton1::before {
@@ -120,6 +122,8 @@ body{
     overflow: hidden;
     transition: color 0.3s;
     margin-left: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
 
 #boton2::before {

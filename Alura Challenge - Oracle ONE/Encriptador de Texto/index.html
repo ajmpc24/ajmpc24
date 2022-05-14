@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Encriptador de Texto</title>
     <meta charset="UTF-8">
@@ -14,6 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <!-- logo -->
@@ -50,7 +52,10 @@
                     <img src="img/Muñeco.png" alt="muneco de busqueda" class="muneco-busqueda">
                     <input type="text" class="input-text-resultado color:black" id="input-text-resultado"
                         placeholder="Ningun mensaje fue encontrado">
-                    <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <div>
+                            <button type="button" class="btn-copy" onclick="botonCopiaTexto()">Copiar</button>
+                        </div>
+                        <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
         </section>
     </main>
@@ -66,16 +71,16 @@
         <div class="wave-4"></div>
         <p>@2022 Alejandro Perez - All rights reserved</p>
         <ul class="iconos_Sociales">
-            <li><a href="#">
+            <li><a href="https://m.facebook.com/login/?locale=es_ES" target="_blank">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a></li>
-            <li><a href="#">
+            <li><a href="https://twitter.com/?lang=es" target="_blank">
                     <ion-icon name="logo-twitter"></ion-icon>
                 </a></li>
-            <li><a href="#">
+            <li><a href="https://www.instagram.com/" target="_blank">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a></li>
-            <li><a href="#">
+            <li><a href="https://www.linkedin.com/in/alejandro-p%C3%A9rez-641a07127/" target="_blank">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a></li>
         </ul>
@@ -88,4 +93,5 @@
         </ul>
     </div>
 </footer>
+
 </html>

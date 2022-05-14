@@ -1,7 +1,7 @@
-
-body{
+body {
     background: #E5E5E5;
 }
+
 .logo img {
     position: relative;
     left: 50px;
@@ -47,6 +47,7 @@ body{
     color: #0A3871;
     background: #E5E5E5;
 }
+
 
 .botones {
     position: relative;
@@ -148,7 +149,6 @@ body{
 #boton2:hover::before {
     transform: scaleX(1);
 }
-
 .imagen-texto-boton {
     position: absolute;
     left: 200px;
@@ -211,20 +211,96 @@ body{
     font-size: 19px;
     font-weight: bold;
     font-family: sans-serif;
+    margin-bottom: 0;
 }
 
 ::placeholder {
     color: black;
     filter: brightness(100%);
     height: 100px;
-    padding-top: 20px;
+    padding-top: 0;
     padding-right: 5px;
     left: 5px;
+}
+
+.btn-copy {
+    margin-left: 70px;
+    margin-top: 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0A3871;
+    letter-spacing: 1px;
+    background: #D8DFE8;
+    padding: 18px 50px 18px 50px;
+    border: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+.btn-copy::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(150px + 12px);
+    min-height: calc(40px + 12px);
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background: transparent;
+    box-shadow: 0 0 40px #0A3871;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.btn-copy:hover::before,
+.btn-copy:focus::before {
+    opacity: 1;
+}
+
+.btn-copy::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #0A3871;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.btn-copy:hover::after,
+.btn-copy:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 180px;
+        height: 180px;
+        opacity: 0;
+    }
 }
 
 .mensaje {
     background-color: transparent;
     width: 285px;
+    padding-top: 65px;
     color: #495057;
     display: inline-block;
     text-align: center;
@@ -273,7 +349,7 @@ footer .iconos_Sociales li a {
     transition: 0.5s;
 }
 
-footer .iconos_Sociales li a:hover {
+footer .iconos_Sociales li a.btn-copy {
     transform: translateY(-15px);
 }
 
@@ -289,7 +365,7 @@ footer .menu li a {
     opacity: 0.75;
 }
 
-footer .menu li a:hover {
+footer .menu li a.btn-copy {
     opacity: 1;
 }
 

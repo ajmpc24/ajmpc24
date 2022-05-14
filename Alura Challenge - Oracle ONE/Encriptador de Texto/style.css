@@ -349,7 +349,7 @@ footer .iconos_Sociales li a {
     transition: 0.5s;
 }
 
-footer .iconos_Sociales li a.btn-copy {
+footer .iconos_Sociales li a:hover {
     transform: translateY(-15px);
 }
 
@@ -365,7 +365,7 @@ footer .menu li a {
     opacity: 0.75;
 }
 
-footer .menu li a.btn-copy {
+footer .menu li a:hover {
     opacity: 1;
 }
 

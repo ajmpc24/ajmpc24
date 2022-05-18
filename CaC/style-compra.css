@@ -1,0 +1,228 @@
+    body {
+        /* background-color: cadetblue; */
+        width: 1340px;
+        height: 900px;
+    }
+
+    .container-fluid li {
+        border: none;
+    }
+
+    .navbar {
+        background: #242624;
+        padding: 0%;
+    }
+
+    .navbar-text {
+        position: absolute;
+        left: 180px;
+        top: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        position: relative;
+        flex-direction: row;
+        display: flex;
+        align-items: flex-end;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .nav-link {
+        color: gray;
+    }
+
+    .nav-link a:link {
+        color: gray
+    }
+
+    .nav-link a:visited {
+        color: #8207c9;
+    }
+
+    .nav-link:hover {
+        color: white;
+    }
+
+    .nav-link-compra {
+        text-decoration: none;
+        color: green;
+    }
+
+    .nav-link-compra:hover {
+        color: rgb(20, 247, 20);
+    }
+
+    .nav-link a:active {
+        color: white;
+    }
+
+    .seccionCompra {
+        /* background-color: wheat; */
+        position: relative;
+        width: 1340px;
+        height: 200px;
+    }
+
+    .categorias {
+        position: relative;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .seccionCompra li {
+        list-style: none;
+        border: solid 1px;
+        border-radius: 5px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 80px;
+        padding-right: 80px;
+        border-color: #8207c9;
+    }
+
+    .tituloVenta {
+        position: relative;
+        width: 1340px;
+        height: 100px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .porcentaje {
+        font-weight: bold;
+    }
+
+    .pre_documentacion {
+        color: gray;
+    }
+
+    .tituloVenta {
+        /* background-color: rgb(197, 135, 21); */
+        position: relative;
+        width: 1340px;
+        height: 100px;
+    }
+
+    .formulario {
+        /* background-color: bisque; */
+        position: relative;
+        width: 1340px;
+        height: 120px;
+    }
+
+    .datosPersonales {
+        /* background-color: aquamarine; */
+        position: relative;
+        width: 1350px;
+        height: 400px;
+    }
+
+    .nombre,
+    .apellido,
+    .email,
+    .cantidad,
+    .categoria {
+        border: solid 0.5px gray;
+        border-radius: 5px;
+        margin: 5px 0 5px 25px;
+        padding: 10px 0 15px 5px;
+    }
+
+    /* box cantidad y categoria */
+    .CantidadCategoria {
+        position: relative;
+        width: 1340px;
+        height: 100px;
+        padding: 10px 50px 0 0;
+        /* background-color: #8207c9; */
+    }
+
+    /* box de cantidad */
+    .boxCantidad {
+        width: 670px;
+        height: 80px;
+        /* background-color: rgb(216, 216, 32); */
+        position: relative;
+        padding: 5px 0 0 100px;
+        font-size: 25px;
+    }
+
+    /* box de categoria */
+    .boxCategoria {
+        width: 670px;
+        height: 80px;
+        /* background-color: beige; */
+        position: relative;
+        left: 670px;
+        bottom: 80px;
+        padding: 5px 0 0 140px;
+        font-size: 25px;
+    }
+
+    .formulario p {
+        position: relative;
+        width: 1200px;
+        height: 50px;
+        left: 100px;
+        margin: 15px;
+        padding: 8px;
+        border-radius: 5px;
+        background-color: #c3e3fd;
+        color: #004173;
+        font-size: 20px;
+    }
+
+    /* box de botones */
+    .botones {
+        position: relative;
+        width: 420px;
+        height: 60px;
+        padding: 5px 0 0 80px;
+        left: 500px;
+        justify-content: center;
+        /* background-color: #8207c9; */
+    }
+
+    .botones button {
+        position: relative;
+        width: 100px;
+        height: 50px;
+        margin-left: 25px;
+        border-radius: 10px;
+        border-color: #0973cb;
+    }
+
+    footer {
+        position: relative;
+        width: 1340px;
+        height: 80px;
+    }
+
+    footer .listaPieDePaginaCompra {
+        background-color: #012e46;
+        position: relative;
+        /* text-indent: 80px; */
+        opacity: 95%;
+        font-size: 14px;
+        text-align: center;
+        bottom: -300px;
+    }
+
+    footer ul li{
+        list-style: none;
+        padding: 25px;
+        display: inline-block;
+    }
+
+    footer ul li a{
+        color: white;
+        text-decoration: none;
+    }

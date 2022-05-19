@@ -11,13 +11,11 @@
     <!--estilo css-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style-tablero.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            
-            </div>
             <div class="logoHorca">
                 <img src="img/horca.png" alt="horca" class="horca">
             </div>
@@ -27,9 +25,25 @@
             </div>
         </div>
     </header>
-    <section class="SeccionInicio">
-       
-    </section>
+    <!-- ingreso de texto y botones -->
+        <section class="TextoIngresadoYBotones">
+            <!-- botones -->
+            <div class="textoYbotones">
+                <div class="texto-input">
+                    <input type="text" class="form_input" required>
+                    <label for="" class="form_label">Ingrese el texto aqui</label>
+                </div>
+                <div class="botones">
+                    <button type="button" onclick="botonEncriptar()" id="boton1" class="button">Encriptar</button>
+                    <button type="button" onclick="botonDesencriptar()" id="boton2" class="button">Desencriptar</button>
+                </div>
+                <div class="texto-botones">
+                    <!-- texto de los botones -->
+                    <img src="img/VectorSigno.png" alt="Signo" class="imagen-texto-boton">
+                    <h5 class="texto-recuerda">Solo letras minúsculas y sin acentos</h5>
+                </div>
+            </div>
+        </section>
     <footer>
         <section class="footer">
             <h2>&#169 Copyright 2022 Alejandro Perez - All rights reserved </h2>

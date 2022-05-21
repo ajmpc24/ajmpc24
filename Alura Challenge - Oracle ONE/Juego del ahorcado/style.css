@@ -82,7 +82,7 @@ body {
     font-size: 20px;
     border: none;
     color: ivory;
-    background-color: #0A3871;
+    background-color: darkgreen;
     align-items: center;
     left: 20px;
     top: 5px;
@@ -98,7 +98,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0A3871;
+    background-color: darkgreen;
     z-index: -1;
     border-radius: 24px;
     transform: translateY(5px);
@@ -106,7 +106,7 @@ body {
 
 .botonInicio:active {
     font-size: x-large;
-    color: #666;
+    color: ivory;
     transform: translateY(5px);
     box-shadow: 0 8px #666;
 }
@@ -119,20 +119,19 @@ body {
     border-radius: 35px;
     letter-spacing: 1px;
     font-size: 20px;
-    border: solid 1px #0A3871;
-    color: #0A3871;
-    background-color: #E5E5E5;
+    border: solid 1px ivory;
+    color: ivory;
+    background-color: darkgreen;
     align-items: center;
     left: 20px;
     top: 170px;
     cursor: pointer;
 }
 
-
 .botonNuevaPalabra:hover {
     background-color: var(--blue);
-    color: black;
-    border: solid black;
+    color: ivory;
+    border: solid ivory;
 }
 
 .botonNuevaPalabra:active {

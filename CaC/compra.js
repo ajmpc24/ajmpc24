@@ -7,5 +7,5 @@ function resumir(){
     var precioConDescuento = precioTicket-((precioTicket*descuento) / 100);
     var precioFinal = cantidadTicket * precioConDescuento;
 
-    document.getElementById("compraTotal").value; = "Total a pagar: $" + precioFinal;
+    document.getElementById("compraTotal").value = "Total a pagar: $" + precioFinal;
 }

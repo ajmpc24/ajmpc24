@@ -59,12 +59,6 @@
         color: white;
     }
 
-    .seccionCompra {
-        /* background-color: wheat; */
-        position: relative;
-        width: 1340px;
-        height: 200px;
-    }
 
     .categorias {
         position: relative;
@@ -90,7 +84,7 @@
 
     .tituloVenta {
         position: relative;
-        width: 1340px;
+        width: 1300px;
         height: 100px;
         margin-top: 80px;
         text-align: center;
@@ -107,21 +101,22 @@
     .tituloVenta {
         /* background-color: rgb(197, 135, 21); */
         position: relative;
-        width: 1340px;
+        width: 1300px;
         height: 100px;
     }
 
-    .formulario {
-        /* background-color: bisque; */
+    .container {
         position: relative;
-        width: 1340px;
         height: 120px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .datosPersonales {
         /* background-color: aquamarine; */
         position: relative;
-        width: 1350px;
+        width: 1300px;
         height: 400px;
     }
 
@@ -132,70 +127,65 @@
     .categoria {
         border: solid 0.5px gray;
         border-radius: 5px;
-        margin: 5px 0 5px 25px;
+        margin: 0 0 5px 18px;
         padding: 10px 0 15px 5px;
     }
 
     /* box cantidad y categoria */
     .CantidadCategoria {
         position: relative;
-        width: 1340px;
+        width: 1300px;
         height: 100px;
-        padding: 10px 50px 0 0;
+        /* padding: 10px 50px 0 0; */
         /* background-color: #8207c9; */
     }
 
     /* box de cantidad */
     .boxCantidad {
-        width: 670px;
+        width: 100%;
         height: 30px;
         /* background-color: rgb(216, 216, 32); */
         position: relative;
-        padding: 5px 0 80px 90px;
+        padding: 25px 0 80px 90px;
         font-size: 20px;
     }
 
     /* box de categoria */
     .boxCategoria {
-        width: 670px;
+        width: 50%;
         height: 80px;
+        margin: 0;
+        padding: 25px 0 80px 90px;
         /* background-color: beige; */
         position: relative;
         left: 670px;
-        bottom: 60px;
-        padding: 5px 0 0 120px;
+        bottom: 110px;
+        /* padding: 5px 0 0 120px; */
         font-size: 20px;
     }
-
-    .formulario p {
-        position: relative;
-        width: 1150px;
-        height: 50px;
-        left: 100px;
-        margin: 30px;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #c3e3fd;
-        color: #053153;
-        font-size: 20px;
-    }
-
-    /* box de botones */
+    #compraTotal{
+    position: relative;
+    width: 80%;
+    margin: 0 40px 0 10px;
+    padding: 15px;
+}
+        /* box de botones */
     .botones {
         position: relative;
-        width: 420px;
+        width: 100%;
         height: 60px;
-        padding: 5px 0 0 60px;
-        left: 500px;
+        padding: 50px;
+        left: 0;
         justify-content: center;
         /* background-color: #8207c9; */
     }
 
     .botones button {
         position: relative;
-        width: 100px;
+        width: 45%;
         height: 50px;
         margin-left: 25px;
+        pad: 5p0x;
         border-radius: 10px;
         border-color: #0973cb;
     }

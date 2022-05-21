@@ -66,66 +66,65 @@
         </ul>
     </main>
     <!-- seccion formulario -->
-    <section class="SeccionFormularioCompra">
-        <div class="FormularioCompra">
-            <div class="tituloVenta">
-                <h6 class="texoVenta">VENTA</h6>
-                <h2 class="textoValorTicket">VALOR DEL TICKET $ 200,00</h2>
-            </div>
-            <form class="formulario">
-                <div class="datosPersonales">
-                    <input type="text" class="nombre" size="80" placeholder="Nombre">
-                    <input type="text" class="apellido" size="80" placeholder="Apellido">
-                    <input type="email" class="email" size="170" placeholder="alejandro.perez@gmail.com">
-                    <div class="CantidadCategoria">
-                        <div class="boxCantidad">
-                            <label for="cantidad" class="labelCantidad">Cantidad</label>
-                            <input type="text" id="cantidad" class="cantidad" size="50" placeholder="cantidad">
-                        </div>
-                        <div class="boxCategoria">
-                            <label for="categoria">Categoria</label>
-                            <select class="categoria" id="categoria" name="categoria">
-                                <option value="Estudiante"> Estudiante </option>
-                                <option value="Trainee"> Trainee </option>
-                                <option value="Junior"> Junior </option>
-                            </select>
-                        </div>
-                    </div>
-                    <p class="total pb-3 pl-3">Total a pagar: <span id="spamTotal"></span> </p>
-                    <div class="botones">
-                        <button type="submit" class="enviarFormulario" name="enviar">Enviar</button>
-                        <button type="reset" class="borrar">Borrar</button>
-                                            </div>
+    <div class="container">
+        <div class="tituloVenta">
+            <h6 class="texoVenta">VENTA</h6>
+            <h2 class="textoValorTicket">VALOR DEL TICKET $ 200,00</h2>
+        </div>
+        <div class="datosPersonales">
+            <input type="text" class="nombre" size="80" placeholder="Nombre">
+            <input type="text" class="apellido" size="80" placeholder="Apellido">
+            <input type="email" class="email" size="170" placeholder="alejandro.perez@gmail.com">
+            <div class="CantidadCategoria">
+                <div class="boxCantidad">
+                    <label for="inputCantidad" class="labelCantidad">Cantidad</label>
+                    <input type="number" id="inputCantidad" class="cantidad" size="50" placeholder="cantidad">
                 </div>
-            </form>
-    </section>
-    <!-- Pie de pagina -->
-    <footer class="pieDePaginaCompra">
-        <!-- Menu barra nav -->
-        <ul class="listaPieDePaginaCompra">
-            <li class="item">
-                <a class="link" href="#">Preguntas frecuentes</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#">Contactanos</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#">Prensa</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#">Conferencias</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#">Terminos y condiciones</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#">Privacidad</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#">Estudiantes</a>
-            </li>
-        </ul>
-    </footer>
+                <div class="boxCategoria">
+                    <label for="inputCategoria">Categoria</label>
+                    <select class="categoria" id="inputCategoria" name="categoria">
+                        <option value="80"> Estudiante </option>
+                        <option value="50"> Trainee </option>
+                        <option value="15"> Junior </option>
+                    </select>
+                </div>
+            </div>
+            <input type="text" id="compraTotal" class="alert alert-primary" style="width: 100%;"
+                value="Total a pagar:  $">
+            <div class="botones">
+                <button type="button" class="enviarFormulario" onclick="resumir()">Totalizar</button>
+                <button type="reset" class="borrar">Borrar</button>
+            </div>
+
+        </div>
+        <!-- Pie de pagina -->
+        <footer class="pieDePaginaCompra">
+            <!-- Menu barra nav -->
+            <ul class="listaPieDePaginaCompra">
+                <li class="item">
+                    <a class="link" href="#">Preguntas frecuentes</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#">Contactanos</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#">Prensa</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#">Conferencias</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#">Terminos y condiciones</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#">Privacidad</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#">Estudiantes</a>
+                </li>
+            </ul>
+        </footer>
 </body>
 <script src="compra.js"></script>
+
 </html>

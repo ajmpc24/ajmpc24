@@ -1,68 +1,206 @@
-.TextoIngresadoYBotones{
-    position: relative;
-    left: 400px;
-    top: 40px;
-    width: 600px;
-    height: 550px;
+* {
+    box-sizing: border-box;
 }
 
-.form_input {
-    position: relative;
-    width: 570px;
-    height: 48px;
-    left: 10px;
-    top: 55px;
-    border: 1px solid whitesmoke;
-    outline: none;
-    border-radius: 10px;
-    font-size: 24px;
-    background-color: transparent;
+body {
+    width: 1350px;
+    height: 660px;
+    background-image: url(img/Pizarra1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 1370px 700px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    margin: 0;
+    overflow: hidden;
 }
 
-.form_input:hover{
-    border: 2px solid;
-    border-color:#9cf4a8 
-}
-
-.form_label {
+/*div horca*/
+.logoHorca {
+    background: transparent;
     position: absolute;
-    width: 220px;
-    height: 18px;
-    left: 10px;
-    top: 60px;
-    border-radius: 5px;
-    margin: 8px;
-    font-family: sans-serif;
+    left: 50px;
+    top: 5px;
+    height: 250px;
+    width: 230px;
+    padding-top: 2px;
+    filter: brightness(70%);
+}
+
+/*logo alura*/
+.logo {
+    max-width: fit-content;
+    filter: contrast(100%);
+}
+
+/*div logo Alura*/
+.logoAlura {
+    position: absolute;
+    width: 75px;
+    height: 85px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: transparent;
+    left: 190px;
+    top: 150px;
+    -webkit-transform: rotate(30deg);
+}
+
+/*imagen de horca*/
+.horca {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+}
+
+/*titulo*/
+.tituloJuego {
+    position: relative;
+    left: 300px;
+    top: 70px;
+    padding-top: 20px;
+    padding-left: 45px;
+    width: 900px;
+    height: 80px;
+}
+
+.game-container {
+    border: 2px solid white;
+    position: absolute;
+    position: relative;
+    top: 5px;
+    height: 400px;
+    width: 500px;
+}
+
+.figure-container {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.figure-part {
+    display: none;
+}
+
+.wrong-letters-container {
+    color: orange;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.wrong-letters-container p {
+    margin: 0 0 5px;
+}
+
+.wrong-letters-container span {
     font-size: 24px;
-    color: whitesmoke;
-    pointer-events: none;
-    transition: top .3s;
 }
 
-.form_input:focus~label,
-.form_input:valid~label {
-    top: 1.7rem;
-    width: 145px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-left: 10px;
-    font-size: 1rem;
-    color: #9cf4a8;
-    border-color: #9cf4a8;
+.word {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.botones {
+.letter {
+    border-bottom: 3px solid #2980b9;
+    color: white;
+    text-transform: capitalize;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 50px;
+    width: 20px;
+}
+
+.popup-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background-color: #2980b9;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* .popup button {
+    cursor: pointer;
+    background-color: #fff;
+    color: #2980b9;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+} */
+
+/* .popup button:active {
+    transform: scale(0.98);
+}
+
+.popup button:focus {
+    outline: 0;
+} */
+
+.notification-container {
+    background-color: red;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-container p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.notification-container.show {
+    transform: translateY(-50px);
+}
+
+
+.botonesNuevoYDesistir {
+    /* background-color: #9cf4a8; */
     position: relative;
     width: 650px;
     height: 60px;
-    top: 390px;
+    left: 40px;
+    bottom: -30px;
     padding-top: 30px;
     padding-bottom: 60px;
     padding-left: 5px;
     padding-right: 30px;
 }
 
-.button {
+#botonNuevo,
+#botonDesistir {
     position: relative;
     width: 260px;
     height: 20px;
@@ -78,49 +216,7 @@
     margin-left: 20px;
 }
 
-#botonGuardar {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-    text-transform: capitalize;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    transition: color 0.3s;
-    margin-right: 10px;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-#botonGuardar::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #D8DFE8;
-    opacity: 20%;
-    border-radius: inherit;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s cubic-bezier(0.4, 1.7, 0.5, 0.6);
-}
-
-#botonGuardar:hover {
-    color:#9cf4a8;
-    font-weight: bold;
-    border: #9cf4a8 2px solid;
-}
-
-#botonGuardar:hover::before {
-    transform: scaleX(1);
-}
-
-/* boton 2 */
-#botonCancelar {
-   
+#botonNuevo {
     color: white;
     background-color: transparent;
     text-decoration: none;
@@ -134,7 +230,48 @@
     cursor: pointer;
 }
 
-#botonCancelar::before {
+#botonNuevo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 20%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.4, 1.7, 0.5, 0.6);
+}
+
+#botonNuevo:hover {
+    color: #9cf4a8;
+    font-weight: bold;
+    border: #9cf4a8 2px solid;
+}
+
+#botonNuevo:hover::before {
+    transform: scaleX(1);
+}
+
+/* boton 2 */
+#botonDesistir {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.3s;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#botonDesistir::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -150,26 +287,40 @@
     transition: transform 0.4s cubic-bezier(0.4, 1.7, 0.5, 0.6);
 }
 
-#botonCancelar:hover {
+#botonDesistir:hover {
     color: #9cf4a8;
     font-weight: bold;
-    border:#9cf4a8 2px solid;
+    border: #9cf4a8 2px solid;
 }
 
-#botonCancelar:hover::before {
+#botonDesistir:hover::before {
     transform: scaleX(1);
 }
 
-.imagen-texto-boton {
-    position: absolute;
-    left: 20px;
-    top: 420px;
-    background-image: white;
+/*pie de pagina */
+.footer {
+    position: relative;
+    bottom: -60px;
+    padding: 10px 0 0;
+    width: 550px;
+    height: 60px;
+    color: white;
+    /* background-color: #2980b9; */
 }
 
-.texto-recuerda {
-    position: absolute;
-    left: 50px;
-    top: 425px;
+.footer a{
+    position: relative;
     color: white;
+    right: 100px;
 }
+
+/* texto pie de pagina*/
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+

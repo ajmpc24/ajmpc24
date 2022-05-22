@@ -84,7 +84,7 @@ body {
     color: ivory;
     background-color: darkgreen;
     align-items: center;
-    left: 20px;
+    right: 450px;
     top: 5px;
     cursor: pointer;
     border-radius: 15px;
@@ -108,7 +108,7 @@ body {
     font-size: x-large;
     color: ivory;
     transform: translateY(5px);
-    box-shadow: 0 8px #666;
+    box-shadow: 0 10px #666;
 }
 
 /*boton nueva palabra*/
@@ -123,7 +123,7 @@ body {
     color: ivory;
     background-color: darkgreen;
     align-items: center;
-    left: 20px;
+    right: 500px;
     top: 170px;
     cursor: pointer;
 }

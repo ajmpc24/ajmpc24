@@ -1,0 +1,178 @@
+.TextoIngresadoYBotones {
+    position: relative;
+    /* left: 400px; */
+    top: 40px;
+    width: 600px;
+    height: 550px;
+}
+
+.form_input {
+    position: relative;
+    color: white;
+    width: 570px;
+    height: 48px;
+    left: 10px;
+    top: 55px;
+    border: 1px solid whitesmoke;
+    outline: none;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: transparent;
+}
+
+.form_input:hover {
+    border: 2px solid;
+    border-color: #9cf4a8
+}
+
+.form_label {
+    position: absolute;
+    width: 230px;
+    height: 18px;
+    left: 10px;
+    top: 60px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: whitesmoke;
+    pointer-events: none;
+    transition: top .3s;
+}
+
+.form_input:focus~label,
+.form_input:valid~label {
+    top: 1.7rem;
+    width: 145px;
+    height: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #9cf4a8;
+    border-color: #9cf4a8;
+}
+
+.botonesGuardarYCancelar {
+    position: relative;
+    width: 650px;
+    height: 60px;
+    top: 390px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 5px;
+    padding-right: 30px;
+}
+
+.buttonGuardar,
+.buttonCancelar {
+    position: relative;
+    width: 260px;
+    height: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-width: 1px;
+    border-color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding-bottom: 35px;
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#botonGuardar {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.3s;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#botonGuardar::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #D8DFE8;
+    opacity: 20%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.4, 1.7, 0.5, 0.6);
+}
+
+#botonGuardar:hover {
+    color: #9cf4a8;
+    font-weight: bold;
+    border: #9cf4a8 2px solid;
+}
+
+
+#botonCancelar:hover::before {
+    transform: scaleX(1);
+}
+
+/* boton 2 */
+#botonCancelar {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.3s;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#botonCancelar::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 20%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.4, 1.7, 0.5, 0.6);
+}
+
+#botonCancelar:hover {
+    color: #9cf4a8;
+    font-weight: bold;
+    border: #9cf4a8 2px solid;
+}
+
+#botonCancelar:hover::before {
+    transform: scaleX(1);
+}
+
+.imagen-texto-boton {
+    position: absolute;
+    left: 20px;
+    top: 420px;
+    background-image: white;
+}
+
+.texto-recuerda {
+    position: absolute;
+    left: 50px;
+    top: 425px;
+    color: white;
+}

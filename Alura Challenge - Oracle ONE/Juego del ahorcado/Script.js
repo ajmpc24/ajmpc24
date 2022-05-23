@@ -1,13 +1,13 @@
 const wordE1 = document.getElementById('word');
 const wrongLettersE1 = document.getElementById('wrong-letters');
-const playAgainBtn = document.getElementById('botonNuevo');
+const playAgainBtn = document.getElementById('play-button');
 const popup = document.getElementById('popup-container');
 const notification = document.getElementById('notification-container');
 const finalMessage = document.getElementById('final-message');
 
 const figureParts= document.querySelectorAll(".figure-part");
 
-const words = ['application', 'programming', 'interface', 'wizard'];
+const words = ['css', 'html', 'alura', 'javascript'];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
@@ -32,7 +32,7 @@ function displayWord(){
     const innerWord = wordE1.innerText.replace(/\n/g, '');
 
     if(innerWord === selectedWord){
-        finalMessage.innerText = 'Felicidades! Ganaste!!!!';
+        finalMessage.innerText = 'Congratulations! You won! 😃';
         popup.style.display= 'flex';
     }
 }
@@ -41,7 +41,7 @@ function displayWord(){
 function updateWrongLetterE1(){
     //Display wrong letters
     wrongLettersE1.innerHTML = `
-    ${wrongLetters.length > 0 ? '<p>Incorrectas</p>' : ''}
+    ${wrongLetters.length > 0 ? '<p>Wrong</p>' : ''}
     ${wrongLetters.map(letter => `<span>${letter}</span>`)}
     `;
 
@@ -59,7 +59,7 @@ function updateWrongLetterE1(){
 
     //Check if lost
     if(wrongLetters.length === figureParts.length){
-        finalMessage.innerText = 'Perdiste!!';
+        finalMessage.innerText = 'Unfortunately you lost. 😕';
         popup.style.display = 'flex';
     }
 }

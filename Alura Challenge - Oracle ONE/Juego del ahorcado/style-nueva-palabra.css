@@ -22,7 +22,7 @@
 
 .form_input:hover {
     border: 2px solid;
-    border-color: #9cf4a8
+    border-color: #9cf4a8;
 }
 
 .form_label {
@@ -42,8 +42,8 @@
 
 .form_input:focus~label,
 .form_input:valid~label {
-    top: 1.7rem;
-    width: 145px;
+    top: 1.5rem;
+    width: 230px;
     height: 8px;
     padding-left: 5px;
     padding-right: 5px;
@@ -117,12 +117,11 @@
     border: #9cf4a8 2px solid;
 }
 
-
-#botonCancelar:hover::before {
+#botonGuardar:hover::before {
     transform: scaleX(1);
 }
 
-/* boton 2 */
+/* boton Cancelar */
 #botonCancelar {
     color: white;
     background-color: transparent;
@@ -175,4 +174,12 @@
     left: 50px;
     top: 425px;
     color: white;
+}
+
+.footer h2{
+    bottom: 20px;
+    position: absolute;
+    height: 20px;
+    width: 800px;
+    left: -130px;
 }

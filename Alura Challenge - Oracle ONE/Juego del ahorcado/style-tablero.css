@@ -148,7 +148,7 @@ body {
     text-align: center;
 }
 
-/* .popup button {
+.popup button {
     cursor: pointer;
     background-color: #fff;
     color: #2980b9;
@@ -156,15 +156,15 @@ body {
     margin-top: 20px;
     padding: 12px 20px;
     font-size: 16px;
-} */
+} 
 
-/* .popup button:active {
+.popup button:active {
     transform: scale(0.98);
 }
 
 .popup button:focus {
     outline: 0;
-} */
+}
 
 .notification-container {
     background-color: red;
@@ -185,9 +185,7 @@ body {
     transform: translateY(-50px);
 }
 
-
 .botonesNuevoYDesistir {
-    /* background-color: #9cf4a8; */
     position: relative;
     width: 650px;
     height: 60px;
@@ -199,7 +197,7 @@ body {
     padding-right: 30px;
 }
 
-#botonNuevo,
+#play-button,
 #botonDesistir {
     position: relative;
     width: 260px;
@@ -216,7 +214,7 @@ body {
     margin-left: 20px;
 }
 
-#botonNuevo {
+#play-button {
     color: white;
     background-color: transparent;
     text-decoration: none;
@@ -230,7 +228,7 @@ body {
     cursor: pointer;
 }
 
-#botonNuevo::before {
+#play-button::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -246,17 +244,17 @@ body {
     transition: transform 0.4s cubic-bezier(0.4, 1.7, 0.5, 0.6);
 }
 
-#botonNuevo:hover {
+#play-button:hover {
     color: #9cf4a8;
     font-weight: bold;
     border: #9cf4a8 2px solid;
 }
 
-#botonNuevo:hover::before {
+#play-button:hover::before {
     transform: scaleX(1);
 }
 
-/* boton 2 */
+/* boton desistir */
 #botonDesistir {
     color: white;
     background-color: transparent;
@@ -305,7 +303,6 @@ body {
     width: 550px;
     height: 60px;
     color: white;
-    /* background-color: #2980b9; */
 }
 
 .footer a{

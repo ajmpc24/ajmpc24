@@ -5,9 +5,8 @@
     background-color: #191919;
     margin-left: auto;
     margin-right: auto;
-    /* --bg: #535151; */
-    /* --shadowLg: rgba(13, 39, 80, .26); */
     --shadow: #fff;
+    font-family: 'Bellota', cursive;
 }
 
 * {
@@ -39,12 +38,10 @@ span {
     display: block;
     font-weight: 100;
     text-align: center;
-    font-family: "Segoe IU", cursive;
     color: #fff;
 }
 
 span:nth-child(1) {
-
     position: relative;
     width: 600px;
     line-height: 250px;
@@ -61,7 +58,7 @@ span:nth-child(1) {
 span:nth-child(2) {
     padding-top: 25px;
     line-height: 70px;
-    font-size: 36px;
+    font-size: 25px;
 }
 
 .social-icons {

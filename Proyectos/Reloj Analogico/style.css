@@ -13,6 +13,8 @@ body {
 }
 
 .clock {
+    position: relative;
+    top: -60px;
     width: 350px;
     height: 350px;
     display: flex;
@@ -21,7 +23,7 @@ body {
     background: url(img/clock.png);
     background-size: cover;
     border: 4px solid #023b4e;
-    border-radius: 90%;
+    border-radius: 30%;
     box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
         inset 0 -15px 15px rgba(255, 255, 255, 0.05),
         0 15px 15px rgba(0, 0, 0, 0.3),
@@ -131,37 +133,20 @@ body.light .sc:before {
 }
 
 .toggle {
-    position: absolute;
     top: 30px;
     right: 150px;
-    width: 20px;
-    height: 20px;
-    border-radius: 16px;
+    width: 80px;
+    height: 40px;
+    border-radius: 40px;
     font-size: 18px;
-    background: #d1dae3;
-    /* font-family: 'Courier New', Courier, monospace; */
+    transition: 0.5s;
     cursor: pointer;
-    transition: 0.5s;
-    display: block;
-    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.01),
-        inset 0 8px 8px rgba(0, 0, 0, 0.01),
-        inset 0 -4px 4px rgba(0, 0, 0, 0.01);
-}
-
-.toggle .indicador{
-    position: absolute;
-    top: 30px;
-    right: 150px;
-    width: 10px;
-    height: 20px;
-    background: linear-gradient(to bottom,#444,#222);
-    border-radius: 50%;
-    transform: scale(0.9);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-    inset 0 4px 4px rgba(255,255,255,0.2),
-    inset 0 -4px 4px rgba(255,255,255,0.2);
-    transition: 0.5s;
-
+    border: 4px solid #023b4e;
+    border-radius: 30%;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(0, 0, 0, 0.3),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 .toggle :before {
@@ -203,4 +188,21 @@ body.light .toggleClass {
 body.light .toggleClass :before {
     content: 'Dark Mode';
     color: #091921;
+}
+
+footer{
+    position: absolute;
+    right: 500px;
+    bottom: 25px;
+}
+
+footer p{
+    position: relative;
+    font-size: 20px;
+    color: orangered;
+    left: 150px;
+    bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: consolas;
 }

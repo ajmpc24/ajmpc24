@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Crea un nuevo documento HTML que cumpla los siguientes parámetros:
+    El título debe ser "Ejercicio 02 - Formularios en HTML" -->
+    <title>Ejercicio 02 - Formularios en HTML</title>
+</head>
+
+<body>
+    <!-- El body debe contener un formulario que cumpla las siguientes características
+    El atributo action será "/" -->
+    <form action="/">
+        <!-- Debe contener los siguientes campos:  -->
+
+        <div>
+            <!-- Un campo de texto llamado "nombre" -->
+            <label for="nombre">nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <br>
+
+        <div>
+            <!-- Un campo numérico llamado "edad" -->
+            <label for="edad">edad:</label>
+            <input type="number" name="edad" id="edad">
+        </div>
+        <br>
+
+        <div>
+            <!-- Un campo de área de texto llamado "frase-favorita" -->
+            <label for="fraseFavorita">frase-favorita</label><br>
+            <textarea name="fraseFavorita" id="fraseFavorita" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        
+        <div>
+            <!-- Un botón de envío -->
+            <button type="reset">Reset</button>
+            <!-- Un botón de reset -->
+            <button type="reset">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>

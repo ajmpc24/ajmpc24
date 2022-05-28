@@ -1,10 +1,15 @@
+function toggleClass() {
+    const body = document.querySelector('body');
+    body.classList.toggle('light');
+}
+
 const deg = 6;
 const hr = document.querySelector("#hr");
 const mn = document.querySelector("#mn");
 const sc = document.querySelector("#sc");
 
-setInterval(function()   {
-  
+setInterval(function () {
+
     let day = new Date();
     let hh = day.getHours() * 30;
     let mm = day.getMinutes() * deg;

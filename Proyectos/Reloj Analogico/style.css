@@ -97,57 +97,110 @@ body {
     position: absolute;
     width: 2px;
     height: 150px;
-    background: #fff;
+    background: #008eff;
     z-index: 12;
     border-radius: 6px 6px 0 0;
 }
 
 /* modo oscuro */
 
-body.light{
+body.light {
     background: #d1dae3;
 }
 
-body.light .clock{
+body.light .clock {
     background: #d1dae3 url(img/clock.png);
     background-size: cover;
     border: 4px solid#cad3dc;
     box-shadow: -8 -8px 15px rgba(255, 255, 255, 0.05),
-    inset 10px 10px 10px rgba(0, 0, 0, 0.01),
-    -8 -8px 15px rgba(255, 255, 255, 0.5),
-    inset 20px 20px 20px rgba(0, 0, 0, 0.1);
+        inset 10px 10px 10px rgba(0, 0, 0, 0.01),
+        -8 -8px 15px rgba(255, 255, 255, 0.5),
+        inset 20px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* body.light .hr ::before {
-    background: #008eff;
-} */
+body.light .hr :before {
+    background: #ff105e;
+}
 
-body.light .mn:before {
+body.light .mn::before {
     background: #091921;
 }
 
-body.light .sc::before{
+body.light .sc:before {
     background: #008eff;
 }
 
-.toggle{
+.toggle {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+    font-size: 18px;
+    background: #d1dae3;
+    /* font-family: 'Courier New', Courier, monospace; */
+    cursor: pointer;
+    transition: 0.5s;
+    display: block;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.01),
+        inset 0 8px 8px rgba(0, 0, 0, 0.01),
+        inset 0 -4px 4px rgba(0, 0, 0, 0.01);
+}
+
+.toggle .indicador{
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    width: 10px;
+    height: 20px;
+    background: linear-gradient(to bottom,#444,#222);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+    inset 0 4px 4px rgba(255,255,255,0.2),
+    inset 0 -4px 4px rgba(255,255,255,0.2);
+    transition: 0.5s;
+
+}
+
+.toggle :before {
+    position: absolute;
+    content: 'light Mode';
+    left: 25px;
+    white-space: nowrap;
+}
+
+.toggleClass {
     position: absolute;
     top: 30px;
     right: 150px;
     width: 20px;
     height: 20px;
     font-size: 18px;
+    border-radius: 50%;
     background: #d1dae3;
     font-family: consolas;
     cursor: pointer;
-    transition: 0.5s;
     display: flex;
     align-items: center;
 }
 
-.toggle :before{
+.toggleClass :before {
     position: absolute;
-    content: 'light Mode';
-    left: 25px;
+    content: 'Light Mode';
+    left: 15px;
+    top: 20px;
     white-space: nowrap;
+    color: #d1dae3;
+}
+
+body.light .toggleClass {
+    background: #091921;
+    color: #d1dae3;
+}
+
+body.light .toggleClass :before {
+    content: 'Dark Mode';
+    color: #091921;
 }

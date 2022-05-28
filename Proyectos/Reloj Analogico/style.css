@@ -28,14 +28,8 @@ body {
         inset 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 
-.body.light .clock{
-    background: #d1dae3 url(img/clock.png);
-    background-size: cover;
-    border: 4px solid#cad3dc;
-}
-
 .clock:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 15px;
     height: 15px;
@@ -79,7 +73,7 @@ body {
 }
 
 .hr:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 8px;
     height: 80px;
@@ -89,7 +83,7 @@ body {
 }
 
 .mn:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 4px;
     height: 90px;
@@ -99,11 +93,61 @@ body {
 }
 
 .sc:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 2px;
     height: 150px;
     background: #fff;
     z-index: 12;
     border-radius: 6px 6px 0 0;
+}
+
+/* modo oscuro */
+
+body.light{
+    background: #d1dae3;
+}
+
+body.light .clock{
+    background: #d1dae3 url(img/clock.png);
+    background-size: cover;
+    border: 4px solid#cad3dc;
+    box-shadow: -8 -8px 15px rgba(255, 255, 255, 0.05),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.01),
+    -8 -8px 15px rgba(255, 255, 255, 0.5),
+    inset 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* body.light .hr ::before {
+    background: #008eff;
+} */
+
+body.light .mn:before {
+    background: #091921;
+}
+
+body.light .sc::before{
+    background: #008eff;
+}
+
+.toggle{
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    background: #d1dae3;
+    font-family: consolas;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.toggle :before{
+    position: absolute;
+    content: 'light Mode';
+    left: 25px;
+    white-space: nowrap;
 }

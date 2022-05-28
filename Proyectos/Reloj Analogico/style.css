@@ -236,16 +236,17 @@ body.light .sc:before {
     color: #d1dae3;
 }
 
-body.light .toggleClass {
+body.light .toggleClass, .redes a {
     background: #091921;
     color: #d1dae3;
 }
 
-body.light .toggleClass :before {
+body.light .toggleClass :before, .redes a :before {
     content: 'Dark Mode';
     color: #091921;
 }
 
+/* pie de pagina */
 footer {
     position: absolute;
     right: 500px;
@@ -257,12 +258,13 @@ footer p {
     font-size: 20px;
     color: orangered;
     left: 150px;
-    bottom: 25px;
+    bottom: 20px;
     font-weight: bold;
     letter-spacing: 1px;
     font-family: consolas;
 }
 
+/* redes sociales */
 #more-vertical {
     display: none;
 }
@@ -270,26 +272,29 @@ footer p {
 .container {
     position: fixed;
     bottom: 40px;
-    right: 30px;
+    right: 50px;
 }
 
 .redes a,
 .icon-more-vertical {
     display: block;
     text-decoration: none;
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 15px;
     width: 55px;
     height: 55px;
     line-height: 55px;
     text-align: center;
     border-radius: 50%;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.05),
+    inset 0 -5px 5px rgba(255, 255, 255, 0.05),
+    0 5px 5px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(0, 0, 0, 0.3);
     transition: all 500ms ease;
     cursor: pointer;
 }
 
 .redes a:hover {
     background: #fff;
-    opacity: 5;
+    opacity: 2;
 }

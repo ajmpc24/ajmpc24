@@ -1,0 +1,17 @@
+body{
+    background-image: url(img/bgMarvel.jpg);
+    width: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Utiliza la disposición flex-box para crear una galería de 6 imágenes con los siguientes parámetros */
+/* Deben reagruparse (wrap) cuando el ancho del viewport cambia */
+.galeria{
+    display: flexbox;
+    flex-wrap: wrap;
+}
+/* Las imágenes deben tener 300 píxeles de ancho */
+img{
+    width: 300px;
+}

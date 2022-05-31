@@ -1,0 +1,221 @@
+/* Replica el ejercicio del vídeo 3 de esta sesión y realiza el siguiente cambio:
+Replícalo exactamente igual, pero realiza una nueva versión en modo oscuro
+Los colores serán los siguientes
+El rosa se queda igual
+El fondo blanco será sustituido por el color #161717
+El fondo de los inputs tendrá un color #212121
+El fondo de los inputs cuando se hace hover será del color #454045
+Los textos tendrán un color blanco */
+
+/* fonts de google */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600;700&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #161717;
+}
+
+/* contenedor de todos los elementos del formulaio */
+.container {
+    color: white;
+    width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* botones */
+.buttons {
+    align-self: flex-start;
+    display: flex;
+    gap: 20px;
+    border-color: #ccc;
+}
+
+/* boton de google */
+.google-btn {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    cursor: pointer;
+}
+
+/* accion sobre el boton de google */
+.google-btn :hover {
+    opacity: 0.75;
+}
+
+/* logo del boton google */
+.google-btn picture {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ajute img boton google */
+.google-btn picture img {
+    width: 75%;
+}
+
+/* texto boton google */
+.google-btn span {
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+}
+
+/* boton tw */
+.twitter-btn {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 22px 5px;
+}
+
+/* logo tw */
+.twitter-btn picture {
+    width: 36px;
+    height: 36px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ajuste img tw boton */
+.twitter-btn picture img {
+    width: 75%;
+}
+
+/* accion sobre el boton tw */
+.twitter-btn :hover {
+    background-color: white;
+}
+
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separator span {
+    color: #8b8b8b;
+}
+
+/* seccion de inputs de name/username */
+.section-inputs {
+    display: flex;
+    width: 100%;
+}
+
+/* formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+/* titulos de los inputs del formulario */
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* negrita de los titulos de los inputs */
+label span {
+    color: white;
+    font-weight: 700;
+}
+
+/* ajuste inputs de name/username */
+.section-inputs input {
+    width: 85%;
+    background-color: #212121;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+}
+
+/* titulos de los inputs */
+label input {
+    width: 90%;
+    background-color: #212121;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: backgroung-color 0.2s, box-swadow 0.2s;
+}
+
+/* ajustes de colores cuando el mouse pasa por encima */
+label input:hover {
+    background-color: #454045;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #eb50eb;
+}
+
+/* ajustes colores cuando el tilde esta en el input */
+label input:focus {
+    background-color: #212121;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #eb50eb;
+}
+
+/* texto del checkbox */
+.checkbox-label {
+    display: flex;
+    flex-direction: row;
+}
+
+/* checkbox / se coloca el type dentro de [] para especificar al input que se le realizan los cambios */
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+}
+
+/* intensidad e negritas el titulo del input */
+.checkbox-label span {
+    font-weight: 400;
+}
+
+/* boton "crear cuenta" */
+.submit-btn {
+    background-color: #ea4c89;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* accion del boton cuando el mouse pasa */
+.submit-btn :hover {
+    opacity: 0.75;
+}

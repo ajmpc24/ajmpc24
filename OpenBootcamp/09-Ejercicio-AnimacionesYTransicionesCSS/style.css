@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}  
+
+.btn-modern{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #009DCF;
+    color: aliceblue;
+    font-size: larger;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 4px solid #006a89;    /* Se añada una sombra */
+    cursor: pointer;
+    transition: background-color 0.4s;      /* Todo esto con una transición de 0.4s */
+}
+  /* Implementa las líneas necesarias en el CSS para que cuando el ratón pase por encima del botón ocurra lo siguiente
+    (hover): */
+.btn-modern:hover{
+    background-color: #004f92;  /* El color de fondo del botón cambie */
+    color: goldenrod;   /* El color del texto cambie */
+     border-bottom: 4px solid goldenrod;
+     transform: translateY(-5px);    /* El botón se traslade -5px en el eje de las Y */
+}
+
+
+
+
+
+   
+    
+    

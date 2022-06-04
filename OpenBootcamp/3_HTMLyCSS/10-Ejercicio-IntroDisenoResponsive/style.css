@@ -1,0 +1,51 @@
+body{
+    background-color: #e2e8f0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.lateral-izquierda{
+    background-color: #61a9fb;
+    justify-content: space-around;
+}
+
+.item{
+    background-color: #4dcdc9;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.pricipal-derecha{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #0bf082;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 640px){
+    .lateral-izquierda{
+        display: flex;
+        flex-direction: row;
+    }
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+/* 
+Utiliza las media queries para que cuando el ancho del viewport 
+sea menor de 640px ocurra lo siguiente:
+La barra lateral izquierda se muestre como una navegación en la parte inferior
+La disposición de los elementos de la barra lateral se vuelva horizontal
+(Tip: Trabaja con la propiedad flex-direction) */

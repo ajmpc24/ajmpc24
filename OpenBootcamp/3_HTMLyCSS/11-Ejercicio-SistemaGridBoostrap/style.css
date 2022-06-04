@@ -1,0 +1,28 @@
+.col{
+    background-color: blueviolet;
+}
+div .row  {
+    text-align: center;
+    gap:0.20rem;
+    padding: 0.20rem;
+}
+
+.col-sm{
+    background-color: lightsteelblue;
+}
+
+.col-md{
+    background-color: lightpink;
+}
+
+.col-lg{
+    background-color: lightblue;
+}
+
+.col-xl{
+    background-color: lightseagreen;
+}
+
+.col-xxl{
+    background-color: lightgreen;
+}

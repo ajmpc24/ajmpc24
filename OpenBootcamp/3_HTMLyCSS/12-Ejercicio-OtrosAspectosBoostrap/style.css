@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+form{
+    border: 2px solid cadetblue;
+    border-radius: 5px;
+}
+
+.card{
+    margin: 1rem;
+    border: 1px solid cadetblue;
+}

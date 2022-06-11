@@ -62,3 +62,27 @@ $color-main: #0075ff;
 
     }
 }
+
+.feature {
+    display: flex;
+    flex-direction: column;
+
+    .i {
+        color: #000040;
+        font-size: 15rem;
+    }
+
+    .description {
+        .title {
+            font-size: 20rem;
+        }
+
+        .text {
+
+        }
+    }
+
+    .cta {
+
+    }
+}

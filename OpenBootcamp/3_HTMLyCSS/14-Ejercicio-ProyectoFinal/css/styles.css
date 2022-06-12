@@ -54,25 +54,25 @@
   box-shadow: 0 0 10px #000040;
 }
 
-.feature {
+.benefit {
   display: flex;
   flex-direction: column;
 }
-.feature .icon {
+.benefit .icon {
   color: #0075ff;
-  font-size: 10rem;
+  font-size: 6.5rem;
   text-align: center;
 }
-.feature .description .title {
+.benefit .description .title {
   font-size: 2rem;
   text-align: center;
 }
-.feature .description .text {
+.benefit .description .text {
   color: #888;
   font-weight: 600;
   text-align: center;
 }
-.feature .cta {
+.benefit .cta {
   margin-top: 3rem;
   color: #0075ff;
   font-weight: 600;
@@ -96,6 +96,10 @@
   font-weight: 600;
 }
 
+html {
+  min-width: 100vw;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -110,7 +114,7 @@ body {
   border-bottom: solid 1px #ddd;
 }
 
-logo .img {
+.logo a img {
   max-width: 7rem;
 }
 
@@ -133,10 +137,14 @@ logo .img {
   font-size: 3rem;
 }
 .sec-home .home-cta .home-description {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  width: 300px;
+}
+.sec-home .home-cta .lead-magnet .input-col {
+  max-width: 200px;
 }
 
-.sec-features {
+.sec-features, .sec-onboarding .intro, .sec-benefits .intro {
   width: 100%;
   max-width: 992px;
   margin: auto;
@@ -145,41 +153,122 @@ logo .img {
   flex-direction: column;
   align-items: center;
 }
-.sec-features .intro {
+.sec-features .intro, .sec-onboarding .intro .intro, .sec-benefits .intro .intro {
   text-align: center;
 }
-.sec-features .intro h3 {
+.sec-features .intro h3, .sec-onboarding .intro .intro h3, .sec-benefits .intro .intro h3 {
   font-size: 1.8rem;
 }
-.sec-features .intro p {
+.sec-features .intro p, .sec-onboarding .intro .intro p, .sec-benefits .intro .intro p {
   font-size: 0.8rem;
   color: #888;
 }
-.sec-features .features {
+.sec-features .features, .sec-onboarding .intro .features, .sec-benefits .intro .features {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.sec-features .features .text {
+.sec-features .features .text, .sec-onboarding .intro .features .text, .sec-benefits .intro .features .text {
   padding: 2rem 0;
+  flex: 1;
 }
-.sec-features .features .text .feature {
+.sec-features .features .text .feature, .sec-onboarding .intro .features .text .feature, .sec-benefits .intro .features .text .feature {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.sec-features .features .text .feature .description {
+.sec-features .features .text .feature .description, .sec-onboarding .intro .features .text .feature .description, .sec-benefits .intro .features .text .feature .description {
   margin-left: 1rem;
   max-width: 20rem;
 }
-.sec-features .features .text .feature .description .description-title {
+.sec-features .features .text .feature .description .description-title, .sec-onboarding .intro .features .text .feature .description .description-title, .sec-benefits .intro .features .text .feature .description .description-title {
   font-size: 1.15rem;
 }
-.sec-features .features .text .feature .description .description-text {
+.sec-features .features .text .feature .description .description-text, .sec-onboarding .intro .features .text .feature .description .description-text, .sec-benefits .intro .features .text .feature .description .description-text {
   font-size: 1rem;
 }
-.sec-features .features .imgage img {
+.sec-features .features .image img, .sec-onboarding .intro .features .image img, .sec-benefits .intro .features .image img {
   max-width: 20rem;
+}
+
+.sec-benefits {
+  border-top: 1px solid #ddd;
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+.sec-kpis {
+  width: 100%;
+  background-color: #0075ff;
+  color: white;
+  padding: 4rem;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .number {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.sec-kpis .desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.sec-onboarding .steps {
+  padding: 0 7rem 5rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-onboarding .step-separator {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 1rem;
+}
+
+.sec-footer-cta {
+  background-color: #f4f8fe;
+  padding: 5rem;
+  background-image: url(../assets/img/bitcoin-for-a-run.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.sec-footer-cta .footer-cta {
+  max-width: 50%;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-onboarding .steps .icon-desc .title {
+    text-align: center;
+  }
+  .sec-footer-cta {
+    background-image: none;
+    width: 100%;
+    text-align: center;
+  }
+  .sec-benefits .intro {
+    text-align: center;
+  }
+  .sec-benefits .intro h3 {
+    font-size: 2rem;
+  }
+  .sec-features p, .sec-benefits .intro p, .sec-onboarding .intro p {
+    font-size: 1rem;
+  }
+  .sec-features h3, .sec-benefits .intro h3, .sec-onboarding .intro h3 {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

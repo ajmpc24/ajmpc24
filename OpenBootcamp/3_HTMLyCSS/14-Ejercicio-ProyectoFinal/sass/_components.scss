@@ -16,7 +16,7 @@ $color-footer: #f4f8fe;
 .btn-main {
     @include btn-base();
     background-color: $color-main;
-    color: white;
+    color: black;
     border: solid 1px $color-main;
 
     &:hover {

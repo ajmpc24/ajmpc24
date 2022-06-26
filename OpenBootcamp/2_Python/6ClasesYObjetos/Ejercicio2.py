@@ -1,22 +1,29 @@
-class Vehiculo():
-    # inicializamos los atributos
-    def __init__(self, color, ruedas, puertas):
-        self.color = color
-        self.ruedas = ruedas
-        self.puertas = puertas
 
-   
-class Coche(Vehiculo):
+class Alumno:
 
-    def __init__(self, color, ruedas, puertas, velocidad, cilindrada):
-        self.color = color
-        self.ruedas = ruedas
-        self.puertas = puertas
-        self.velocidad = velocidad
-        self.cilindrada = cilindrada
+    def inicializar(self,nombre,nota):
+        self.nombre=nombre
+        self.nota=nota
+ 
+    def imprimir(self):
+               print("Nombre: ",self.nombre)
+               print("Nota: ",self.nota)
+ 
+    def aprobo(self):
+            if self.nota >= 6:
+                print("Aprobado!!!")
+            else:
+                print("Reprobado!!")
+ 
 
-  
-# bloque principal
-# creamos el nuevo objeto, lo inicializamos y se imprime
-coche = Coche("azul", 4, 4, 150, 1200)
-print(coche)
+alumnoNuevo = Alumno()
+
+alumnoNuevo.inicializar("Vitaly",8)
+alumnoNuevo.imprimir()
+alumnoNuevo.aprobo()
+
+alumnoNuevo = Alumno()
+
+alumnoNuevo.inicializar("Jose",5)
+alumnoNuevo.imprimir()
+alumnoNuevo.aprobo()

@@ -1,0 +1,2 @@
+Crean do anrchivo .txt para ejercicio 1 del modulo 8 del tema entrada y salida del curso de python
+Archivo creado e ingresando nuevos dato.

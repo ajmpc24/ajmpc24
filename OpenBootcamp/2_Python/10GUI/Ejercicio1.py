@@ -24,3 +24,4 @@ monitor.pack()
 Button(root, text="Reiniciar", command=reset).pack()
 
 root.mainloop()
+

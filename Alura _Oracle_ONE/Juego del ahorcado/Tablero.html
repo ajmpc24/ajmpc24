@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ahorcado</title>
+    <link rel="stylesheet" href="style-Tablero.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header>
+        <div class="logoHorca">
+            <img src="img/horca.png" alt="horca" class="horca">
+        </div>
+        <div class="logoAlura">
+            <!--Logo -->
+            <img src="img/logoAlura.png" alt="logo de alura" class="logo" width="100%" height="100%">
+        </div>
+        </div>
+    </header>
+    <div class="game-container">
+        <svg height="250" width="200" class="figure-container">
+            <!-- horca -->
+            <line x1="60" y1="20" x2="140" y2="20" />
+            <line x1="140" y1="20" x2="140" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="230" />
+            <line x1="20" y1="230" x2="100" y2="230" />
+
+            <!-- cabeza -->
+            <circle cx="140" cy="70" r="20" class="figure-part" />
+            <!-- cuerpo -->
+            <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+            <!-- brazos -->
+            <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+            <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+            <!-- piernas -->
+            <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+            <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+        </svg>
+
+        <div class="wrong-letters-container">
+            <div id="wrong-letters"></div>
+        </div>
+        <div class="word" id="word"></div>
+    </div>
+    <!-- mensaje fianl-->
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="final-message"></h2>
+        </div>
+    </div>
+    <!-- Notificacion letra repetida -->
+    <div class="notification-container" id="notification-container">
+        <p>Ya has ingresado esa letra!!</p>
+    </div>
+    <!-- botones -->
+        <div class="botonesNuevoYDesistir">
+            <button type="button" id="play-button" class="buttonNuevoJuego">Nuevo Juego</button>
+            <a href="index.html" target="_blank">
+                <button type="button" id="botonDesistir" class="buttonDesistir">Desistir</button></a>
+        </div>
+    <footer>
+        <section class="footer">
+            <h2>&#169 Copyright 2022 Alejandro Perez - All rights reserved </h2>
+        </section>
+    </footer>
+    <script src="Script.js"></script>
+</body>
+</html>

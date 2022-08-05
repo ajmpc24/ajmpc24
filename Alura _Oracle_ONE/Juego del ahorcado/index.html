@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del ahorcado</title>
+    <!--resetar etiquetas-->
+    <link rel="stylesheet" href="reset.css">
+    <!--estilo css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style-Tablero.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="tituloJuego">
+                <!--Titulo de la pagina(img) -->
+                <a href="https://fontmeme.com/es/fuentes-de-tiza/">
+                    <img src="https://fontmeme.com/permalink/220515/5f6f27e8154869b0fe450a1f1a121c21.png"
+                        alt="fuentes-de-tiza" border="0">
+                </a>
+            </div>
+            <div class="logoHorca">
+                <img src="img/horca.png" alt="horca" class="horca">
+            </div>
+            <div class="logoAlura">
+                <!--Logo -->
+                <img src="img/logoAlura.png" alt="logo de alura" class="logo" width="100%" height="100%">
+            </div>
+        </div>
+    </header>
+    <section class="SeccionInicio">
+        <div class="botonesInicio">
+            <a href="tablero.html" target="_blank">
+            <button type="button" onclick="iniciarJuego()" id="botonInicio" class="botonInicio" >Iniciar
+                Juego</button></a>
+                <a href="AgregarNuevaPalabra.html" target="_blank">
+            <button type="button" onclick="agregarNuevaPalabra()" id="botonNuevaPalabra"
+                class="botonNuevaPalabra">Agregar Nueva Palabra</button></a>
+        </div>
+        <div class="iconsSocial">
+            <a href="https://github.com/" target="_blank" class="icon icon-github"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="icon icon-instagram"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank" class="icon icon-gorjeo"></a>
+            <a href="https://www.linkedin.com/in/alejandro-p%C3%A9rez-641a07127/" target="_blank"
+                class="icon icon-linkedin"></a>
+        </div>
+    </section>
+    <footer>
+        <section class="footer">
+            <h2>&#169 Copyright 2022 Alejandro Perez - All rights reserved </h2>
+        </section>
+    </footer>
+    <script src="Script.js"></script>
+</body>
+
+</html>

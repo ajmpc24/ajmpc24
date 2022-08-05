@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Encriptador de Texto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <!-- logo alura -->
+            <img src="img/logoAlura.png" alt="logo de alura">
+        </div>
+    </header>
+    <main>
+        <section class="TextoIngresadoYBotones">
+            <!-- ingreso de texto y botones -->
+            <!-- botones -->
+            <div class="textoYbotones">
+                <div class="texto-input">
+                    <input type="text" style="color:#0A3871;" class="form_input" >
+                    <label for="" class="form_label">Ingrese el texto aqui</label>
+                </div>
+                <div class="botones">
+                    <button type="button" id="boton1" class="button">Encriptar</button>
+                    <button type="button" id="boton2" class="button">Desencriptar</button>
+                </div>
+                <div class="texto-botones">
+                    <!-- texto de los botones -->
+                    <img src="img/VectorSigno.png" alt="Signo" class="imagen-texto-boton">
+                    <h5 class="texto-recuerda">Solo letras minúsculas y sin acentos</h5>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- cuadro resultado + imagen + texto info -->
+            <div class="munecoYtexto">
+                <!-- "muñeco-busqueda" -->
+                <div class="muneco-busqueda">
+                    <img src="img/Muñeco.png" alt="muneco de busqueda" class="muneco-busqueda">
+                    <h3 class="texto-muneco">Ningun mensaje fue encontrado</h3>
+                    <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+        </section>
+    </main>
+</body>

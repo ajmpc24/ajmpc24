@@ -1,0 +1,335 @@
+body{
+    font-family:  'Cinzel', serif;
+}
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;/*ancho del div o caja o box*/
+    position: relative;
+    margin: 0 auto;
+}
+
+.formulario{
+    width: 940px;/*ancho del div o caja o box*/
+    
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;/*posisicon total o al limite*/
+    top: 101px;/* posicion 0 = arriba = inicio*/
+    right: 0;/* derecha*/
+}
+
+nav li {
+    display: inline;/*alinea los textos o listas TIPO MENU HORINZONTAL*/
+    margin: 0 0 0 15px;/* espacio entre cada texto*/
+
+}
+
+nav a {
+    text-transform: uppercase;/*Mayuscula la 1er letra*/
+    color: black;/* letras en negro*/
+    font-weight: bold;/*letras en negrita*/
+    font-size: 22px;/*tamaño de las letras*/
+    text-decoration: none;/*quitar el subrayado como link / url*/
+}
+
+nav a:hover{    /*captura la accion del mouse y cambia de color*/
+    color: #c78c19;
+    text-decoration: underline; /*agregar el subrayada al texto*/
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    background: linear-gradient(#fefefe,#888888);
+}
+
+.productos li {
+    display: inline-block;  /*alinear horizontal*/
+    text-align: center;     /* center contenido*/
+    width: 30%;             /* distribuir los espacios en este caso son 3 box 30%+30%30%+10%(espacio de sobra)*/
+    vertical-align: top;    /*alinear en la parte superior vertical*/
+    margin: 0 10.5px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*version #1 CORTA Y MEJORADA para bordes*/
+    border: 2px solid black;
+
+    /*version #2 para bordes*/
+    /*-color: black;
+    border-width: 2px;
+    border-style: solid;*/
+
+    /* VERSION #1   redondear bordes de forma individual
+    border-top-left-radius: 10px; /*borde izq superior radio
+    border-top-right-radius: 25px; /*borde izq superior radio
+    border-bottom-right-radius: 40px; /*borde izq superior radio
+    border-bottom-left-radius: 50px; /*borde izq superior radio
+    */
+
+    /* VERSION #2 MISMO ORDEN DE ARRIBA EN SENTIDO DEL RELOJ
+      border-radius: 10px 25px 40px 50px;
+    */
+
+    /* VERSION #3   redondear los 4 bordes de una vez*/
+    border-radius: 10px;
+}
+
+.productos li:hover{    /*capturo el movimiento del mouse y cambio el color*/
+    border-color: #c78c19;  /*cambio el borde*/
+}
+
+.productos li:active{    /*cambia de colorcon el click del mouse*/
+    border-color: green;  /*cambio el borde*/
+}
+
+.productos h2 {
+    font-size: 30px;    /*tamnalo de letra del titulo*/
+    font-weight: bold;  /*negrita*/
+}
+
+.productos li:hover h2{/* en mi elemtento LI CAPTURA EL MOV DEL MOUSE y al TITULO CAMBIALE EL TAMAÑO*/
+    font-size: 33px;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;     /*tamnalo de letra del precio*/
+    font-weight: bold;   /*negrita*/
+    margin-top: 10px;   /*separa del margen superior EN ESTE CASO SEPARA EL PRECIO DE LA DESCRIPCION*/
+}
+
+footer{
+    text-align: center; /*centro el contenido del pie de pagina*/
+    background: url(imagenes/bg.jpg);   /*insertar imagen como fondo*/
+    padding: 20px;  /* bajo y centro la imagen dandole mas margen*/
+}
+
+.copyright{
+    color: white;
+    font-size: 20px;
+       margin: 20px;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form p{
+    display: block; /* coloca las etiquetas en formato vertical tipo formulario*/
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.input-padron{            /* idem arriba*/
+    display: block;
+    margin:  0 10px;
+    padding: 5px 0;
+    width: 50%;
+}
+
+main{
+    background: linear-gradient(#fefefe,#888888);
+}
+.formulario{
+    width: 640px;
+}
+
+fieldset{
+    margin:  40px 0 20px;
+    padding: 20px 0;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #77fa7d;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;  /*coloco tiempo de transicion del cambio de color de la linea 153*/
+    cursor: pointer;    /* cambio de puntero de flecha a mano cuadno esta sobre el "boton enviar"*/
+}
+
+.enviar:hover{
+    background: #807b85;  /*cambio el borde*/
+    transform: scale(1.2);
+}
+
+table{
+    display: inline-block;
+    padding: 0 0 40px 50px;
+    text-align: center;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/* CSS para ajustar el HOME*/
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    text-align: justify;
+    padding: 3em 0;
+    background: #fefefe;
+    width: 100%;
+    
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /* 2 veces el tamaño por defecto*/
+    margin: 0 0 1em;
+    clear: left;
+}
+/*
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+
+.titulo-principal:before{
+    content: "[";
+}
+
+.titulo-principal:after{
+    content: "]";
+}*/
+
+p:first-line{
+font-style: italic;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal {
+    font-style: italic;
+    
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe,#888888);
+}
+
+.mapa p{
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.mapa-contenido{
+   width: 940px;
+   margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 800px;
+    margin: 1em auto;
+    padding: 40px 0 0 0;
+}
+
+.lista-diferenciales {
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 23px 0 8px;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content: "✸";
+}
+
+.items:first-child{
+    font-style: italic;
+    color: #FFD700
+}
+
+/* puedo escoger el numero del item para darle el cambio especifico
+.items:nth-child(2){
+    font-weight: bold;
+} */
+
+.imagenDiferenciales{
+    width: 65%;
+    transition: 100ms;
+    box-shadow: 20px 20px 20px 15px black;
+}
+
+.imagenDiferenciales:hover{
+    opacity: 85%;
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+.video{
+    width: 900px;
+    margin: 1em 0 0 15em;
+    padding: 50px 0 0 0;
+}
+
+/*ajustar responsive */
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .formulario, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagenDiferenciales{
+        width: 100%;
+    }
+}
+
+
+
+
